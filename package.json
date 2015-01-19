@@ -1,0 +1,15 @@
+{
+  "name": "angularjs-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chandler Kent <chandler.kent@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.7.4"
+  }
+}

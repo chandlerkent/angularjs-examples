@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Examples - scope-controller-as</title>
+	<script src="../bower_components/angular/angular.js"></script>  
+</head>
+<body>
+	<div ng-app="testApp" ng-controller="ControllerOne as one">
+		<b>Controller One: </b>
+		<input type="text" ng-model="one.input">
+
+		<div ng-controller="ControllerTwo as two">
+			<b>Controller Two: </b>
+			<input type="text" ng-model="two.input">
+
+			<div ng-controller="ControllerThree as three">
+				<b>Controller Three: </b>
+				<input type="text" ng-model="two.input">
+			</div>
+
+		</div>
+		
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>

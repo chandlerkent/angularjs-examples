@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Examples - modules</title>
+	<script src="../bower_components/angular/angular.js"></script>  
+</head>
+<body>
+	<div ng-app="testApp" ng-controller="TestController as vm">
+		<button ng-click="vm.sayHello()">Say Hi</button>
+
+		<div ng-controller="ModuleOneController as modOne">
+			<h3>{{modOne.name}}</h3>
+		</div>
+
+		<div ng-controller="ModuleTwoController as modTwo">
+			<h3>{{modTwo.name}}</h3>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+
+	<script src="module-one/module-one-module.js"></script>
+	<script src="module-one/module-one-service.js"></script>
+	<script src="module-one/module-one-controller.js"></script>
+
+	<script src="module-two/module-two-module.js"></script>
+	<script src="module-two/module-two-controller.js"></script>
+</body>
+</html>

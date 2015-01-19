@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Examples - bad-scope</title>
+	<script src="../bower_components/angular/angular.js"></script>  
+</head>
+<body>
+	<div ng-app="testApp" ng-controller="ControllerOne">
+		<b>Controller One: </b>
+		<input type="text" ng-model="input">
+
+		<div ng-controller="ControllerTwo">
+			<b>Controller Two: </b>
+			<input type="text" ng-model="input">
+
+			<div ng-controller="ControllerThree">
+				<b>Controller Three: </b>
+				<input type="text" ng-model="input">
+			</div>
+
+		</div>
+		
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Examples - expressions</title>
+	<script src="../bower_components/angular/angular.js"></script>  
+</head>
+<body>
+	<script>
+		window.testVar = 'myTestVar';
+	</script>
+
+	<div ng-app="testApp" ng-controller="TestController">
+		<div>
+			window? {{testVar}}
+		</div>
+
+		<div>
+			Undefined doesn't throw {{notDefinedVar}}
+		</div>
+
+		<div>
+			Formatting through filtering {{"this is uppercase" | uppercase}}
+		</div>
+
+		<div>
+			Function that doesn't exist {{notdefined()}}
+		</div>
+
+		<div>
+			Function that throws error {{throwError()}}
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
